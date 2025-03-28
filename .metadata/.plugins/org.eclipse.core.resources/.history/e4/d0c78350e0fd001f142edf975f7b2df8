@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilização da imagem */
+#logo {
+    display: block;
+    width: 150px; /* Reduz o tamanho da imagem */
+    height: auto; /* Mantém a proporção original */
+    margin: 10px auto; /* Centraliza */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+h1 {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Estilização da grade (panelGrid) */
+.p-panelgrid {
+    width: 60% !important; /* Reduz a largura da grade */
+    margin: 0 auto; /* Centraliza a grade */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* Ajustando os campos dentro da grade */
+.p-panelgrid td, 
+.p-panelgrid th {
+    padding: 5px !important; /* Reduz o espaçamento interno */
+    font-size: 14px !important; /* Ajusta o tamanho da fonte */
+    text-align: center;
+}
+
+/* Estilizando os inputs */
+.p-inputtext {
+    width: 100% !important;
+    padding: 6px !important; /* Reduz a altura dos campos */
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Estilização do botão */
+#btn-envio .ui-button {
+    background-color: #A020F0; /* Lilás forte */
+    color: white;
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px; /* Deixa o botão arredondado */
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Efeito de hover no botão */
+#btn-envio .ui-button:hover {
+    background-color: #800080; /* Tom mais escuro ao passar o mouse */
+}
+
+/* Estilização da tabela */
+.p-datatable {
+    width: 80% !important; /* Reduz a largura da tabela */
+    margin: 0 auto; /* Centraliza */
+    border-radius: 8px;
+}
+
+/* Estilização dos cabeçalhos da tabela */
+.ui-datatable thead th, 
+.p-datatable thead th {
+    background-color: #A020F0 !important; /* Roxo vibrante */
+    color: black !important; /* Texto preto */
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Centralizar colunas na tabela */
+.ui-datatable td, 
+.ui-datatable th, 
+.p-datatable td, 
+.p-datatable th {
+    text-align: center !important;
+    vertical-align: middle;
+}
+
+/* Deixar os nomes na primeira coluna da grade na cor rosa */
+.p-panelgrid td:first-child, 
+.p-panelgrid th:first-child,
+.p-datatable tbody td:first-child {
+    color: #FF1493 !important; /* Rosa Pink */
+    font-weight: bold;
+}
+
+/* Fundo lilás suave para as tabelas */
+.p-datatable thead th, 
+.p-datatable tbody td {
+    background-color: #F8E1F4; /* Lilás suave */
+}
+
+/* Melhorar a responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .p-panelgrid {
+        width: 90% !important; /* Ajusta a grade para telas menores */
+    }
+
+    .p-datatable {
+        width: 95% !important; /* Ajusta a tabela para telas menores */
+    }
+
+    input, button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    table th, table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #logo {
+        width: 120px; /* Reduz ainda mais a imagem para telas pequenas */
+    }
+}

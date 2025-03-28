@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilização da imagem */
+#logo {
+    display: block;
+    width: 150px; /* Reduz o tamanho da imagem */
+    height: auto; /* Mantém a proporção original */
+    margin: 10px auto; /* Centraliza */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+h1 {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Estilização do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+label {
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Botão arredondado */
+#btn-envio .ui-button {
+    background-color: #A020F0; /* Lilás forte */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px; /* Deixa o botão arredondado */
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Efeito de hover no botão */
+#btn-envio .ui-button:hover {
+    background-color: #800080; /* Tom mais escuro ao passar o mouse */
+}
+
+/* Estilização da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Estilização dos cabeçalhos da tabela com lilás forte */
+.ui-datatable thead th, 
+.p-datatable thead th {
+    background-color: #A020F0 !important; /* Roxo vibrante */
+    color: black !important; /* Texto preto */
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Centralizar colunas no panelGrid */
+.p-panelgrid td, 
+.p-panelgrid th {
+    text-align: center !important;
+    vertical-align: middle;
+}
+
+/* Centralizar colunas na dataTable */
+.ui-datatable td, 
+.ui-datatable th, 
+.p-datatable td, 
+.p-datatable th {
+    text-align: center !important;
+    vertical-align: middle;
+}
+
+/* Deixar os nomes na primeira coluna da grade na cor rosa */
+.p-panelgrid td:first-child, 
+.p-panelgrid th:first-child,
+.p-datatable tbody td:first-child {
+    color: #FF1493 !important; /* Rosa Pink */
+    font-weight: bold;
+}
+
+/* Fundo lilás suave para as tabelas */
+.p-datatable thead th, 
+.p-datatable tbody td {
+    background-color: #F8E1F4; /* Lilás suave */
+}
+
+/* Melhorar a responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    input, button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    table th, table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #logo {
+        width: 120px; /* Reduz ainda mais a imagem para telas pequenas */
+    }
+}
